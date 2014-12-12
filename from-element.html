@@ -3,7 +3,7 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Click the button.</h1>
 
   <button class="open-popup {{#if popupOpen}}active{{/if}}">
     Open</button>
@@ -13,6 +13,10 @@
       {{> popup}}
     {{/if}}
   {{/momentum}}
+
+  <br />
+
+  <a href="https://github.com/stubailo/meteor-momentum-from-element">GitHub</a>
 </body>
 
 <template name="popup">
