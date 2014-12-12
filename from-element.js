@@ -34,7 +34,8 @@ if (Meteor.isClient) {
           left: 0,
           top: 0,
           position: "absolute",
-          boxSizing: "border-box"
+          boxSizing: "border-box",
+          opacity: 1
         });
         $node.append($overlay);
 
