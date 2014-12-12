@@ -103,7 +103,7 @@ if (Meteor.isClient) {
           width: $from.outerWidth(),
           left: $from.offset().left,
           top: $from.offset().top,
-          padding: $from.css("padding"),
+          padding: 0,
           marginTop: 0,
           marginLeft: 0
         };
