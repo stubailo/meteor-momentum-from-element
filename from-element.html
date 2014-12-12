@@ -1,0 +1,23 @@
+<head>
+  <title>from-element</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  <button class="open-popup {{#if popupOpen}}active{{/if}}">
+    Open</button>
+
+  {{#momentum plugin="from-element" from=".open-popup"}}
+    {{#if popupOpen}}
+      {{> popup}}
+    {{/if}}
+  {{/momentum}}
+</body>
+
+<template name="popup">
+  <div class="popup">
+    <button class="close">&times;</button>
+    Hello world!
+  </div>
+</template>
